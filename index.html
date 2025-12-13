@@ -5,201 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vestigial Archives - Main Hall</title>
   <link rel="icon" href="./assets/favicon.png">
-  <style>
-
-  body {
-    margin: 0;
-  }
-
-  .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 80px;
-    background: linear-gradient(90deg, #303763, #0c0c24);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .navinner {
-    width: 92%;
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 0;
-  }
-
-  .navleft {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .navlogo {
-    width: 50px;
-    height: auto;
-  }
-
-  .navtitle {
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    color: #e9ecff;
-  }
-
-  .navlinks {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .btn-one {
-  color: #FFF;
-  transition: all 0.3s;
-  position: relative;
-}
-  .btn-one span {
-  transition: all 0.3s;
-}
-  .btn-one::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: rgba(255,255,255,0.5);
-  border-bottom-color: rgba(255,255,255,0.5);
-  transform: scale(0.1, 1);
-}
-  .btn-one:hover span {
-  letter-spacing: 2px;
-}
-  .btn-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
-}
-  .btn-one::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.3s;
-}
-  .btn-one:hover::after {
-  opacity: 0; 
-  transform: scale(0.1, 1);
-}
-
-  .navlinks a {
-    padding: 10px 8px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 13px;
-    background: rgba(255, 255, 255, 0.12);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    transition: transform 0.1s, box-shadow 0.1s, background 0.1s;
-    border-radius: 20px;
-  }
-
-  .navlinks a:hover {
-    background:transparent;
-    transform: translateY(-1px);
-    border-radius: 0;
-  }
-
-  .asktheuser {
-    margin: 0 0 10px;
-    font-size: 20px;
-    font-style: italic;
-  }
-
-  .doors {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    justify-content: space-around;
-    gap: 14px;    
-    margin-top: 620px;
-    margin-bottom: 40px;
-  }
-
-  .door {
-    background: linear-gradient(#ffffff, #f5e7c8);
-    border: 1px solid #e0d7c3;
-    height: 220px;
-    width: 120px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: brown;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    
-    transition: 
-     background 0.2s ease,
-     transform 0.15s ease,
-     box-shadow 0.15s ease;
-  }
-
-  .door span {
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-
-  .door span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-
-  .door:hover span {
-    padding-right: 25px;
-  }
-
-  .door:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
-  .door:hover {
-    background: linear-gradient(#f5e7c8, #ffffff);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  }
-
-  </style>
+  <link rel="stylesheet" href="./public/css/style.css">
 </head>
-
 <body>
 <div class="nav">
   <div class="navinner">
 
     <nav class="navlinks">
       <a href="index.html" class="btn-one"><span>Main Hall</span></a>
-      <a href="studyhall.html" class="btn-one"><span>Study Hall</span></a>
-      <a href="gallery.html" class="btn-one"><span>The Gallery</span></a>
-      <a href="worldinfo.html" class="btn-one"><span>World Information</span></a>
-      <a href="characters.html" class="btn-one"><span>Characters</span></a>
-      <a href="authorinfo.html" class="btn-one"><span>About the Authors</span></a>
+      <a href="./public/studyhall.html" class="btn-one"><span>Study Hall</span></a>
+      <a href="./public/characters.html" class="btn-one"><span>Character Index</span></a>
     </nav>
 
     <div class="navleft">
@@ -208,10 +23,71 @@
     </div>
   </div>
 </div>
+  <div class="page">
+  <header class="hero">
+    <div class="heroText">
+      <h1 class="heroTitle">Main Hall</h1>
+      <p>
+        The Main Hall of the Vestigial Archives is quiet and warmly lit, shelves rising like corridors of memory.
+        Dust floats around the air, and at the reception desk stands Lotus, unhurried and attentive, as though she has been waiting for someone to arrive. 
+      </p>
+
+      <p>
+        <em>“A visitor! We haven't seen one in a while, I was about to go crazy... anyway, I suggest visiting the Character Index first, a room filled with stories and people! Afterwards, you can visit the Study Hall, which quizzes your knowledge on what you learnt from the Character Index.”
+        <br><br>
+          “Take your time, nothing here disappears unless you forget it.”
+        </em>
+      </p>
+    </div>
+    <img src="./assets/lotusgreeting.png" alt="Lotus Sprite" class="heroSprite">
+    <p class="caption">Lotus welcomes visitors to the Main Hall.</p>
+  </header>
   <section class="doors">
-    <a class="door" href="studyhall.html"><span>Study Hall</span></a>
-    <a class="door" href="authorinfo.html"><span>About the Authors</span></a>
-    <a class="door" href="gallery.html"><span>Gallery</span></a>
+    <a class="door" href="./public/studyhall.html"><span>Study Hall</span></a>
+    <a class="door" href="./public/characters.html"><span>Character Index</span></a>
   </section>
+  </div>
+  <footer class = "footer">
+  <h2 class="footerTitle">References</h2>
+  <ul class="references">
+    <li>
+      Natalia Reshetnikova (n.d.). <em>Simple CSS button hover effects.</em> CodePen. 
+      <a href="https://codepen.io/natalia-reshetnikova/pen/oRRjPP" target="_blank" rel="noopener">
+      https://codepen.io/natalia-reshetnikova/pen/oRRjPP
+      </a>
+    </li>
+
+    <li>
+      W3Schools.com. (n.d.).
+      <a href="https://www.w3schools.com/" target="_blank" rel="noopener">
+      https://www.w3schools.com/
+      </a>
+    </li>
+
+    <li>
+      Collaborapix Studio. (n.d.). Pixel art illustration Quill pen. Pixelated feather pen. Magical quill feather pen icon pixelated for the pixel art game and icon for website and video game. old school retro. Pro Vector.
+      <a href="https://www.vecteezy.com/vector-art/32189259-pixel-art-illustration-quill-pen-pixelated-feather-pen-magical-quill-feather-pen-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro" target="_blank" rel="noopener">
+      https://www.vecteezy.com/vector-art/32189259-pixel-art-illustration-quill-pen-pixelated-feather-pen-magical-quill-feather-pen-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro
+      </a>
+    </li>
+
+    <li>
+      8 bit-maKer. (n.d.).
+      <a href="https://picrew.me/en/image_maker/188948" target="_blank" rel="noopener">
+      https://picrew.me/en/image_maker/188948
+      </a>
+    </li>
+    </ul>
+    
+    <p class="footerNote">
+      All original characters and narrative content created by the site author.
+    </p>
+  </footer>
 </body>
 </html>
+
+<!-- dear ma'am, if you're seeing this,
+guess who thought they could finish the rest of the website in a night 😂😂😂😂😂😂
+in reality, i spent almost a day
+so yeah ma'am thank you for the indirect lesson on time management ❤️‍🩹❤️‍🩹❤️‍🩹
+-->

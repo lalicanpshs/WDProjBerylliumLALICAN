@@ -1,0 +1,608 @@
+/* -------- Base -------- */
+body {
+  margin: 0;
+}
+
+/* -------- Navbar (shared) -------- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 80px;
+  background: linear-gradient(90deg, #303763, #0c0c24);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navinner {
+  width: 92%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navlogo {
+  width: 50px;
+  height: auto;
+}
+
+.navtitle {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #e9ecff;
+}
+
+.navlinks {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Button hover effect (from CodePen reference) */
+.btn-one {
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+.navlinks a {
+  padding: 10px 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s, box-shadow 0.1s, background 0.1s;
+  border-radius: 20px;
+}
+
+.navlinks a:hover {
+  background: transparent;
+  transform: translateY(-1px);
+  border-radius: 0;
+}
+
+/* -------- Page wrapper (shared) -------- */
+.page {
+  padding-top: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  background: radial-gradient(circle at top, #14143a, #0c0c24 60%, #070716);
+  min-height: calc(100vh - 80px);
+}
+
+/* -------- Captions (shared) -------- */
+.caption {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(233, 236, 255, 0.7);
+}
+
+/* -------- Footer + References (shared) -------- */
+.footer {
+  margin-top: 0;
+  padding: 30px 20px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.85);
+  color: #f9ebced9;
+  font-size: 14px;
+}
+
+.footerTitle {
+  margin: 0 0 14px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: #f9ebce;
+}
+
+.references {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.references li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.references a {
+  color: #cbb890;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
+
+.footerNote {
+  margin-top: 18px;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+/* =========================================================
+   INDEX (Main Hall) - Page-specific
+========================================================= */
+.asktheuser {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.doors {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin: 10px auto 40px;
+  flex-wrap: wrap;
+}
+
+.door {
+  background: linear-gradient(#ffffff, #f5e7c8);
+  border: 1px solid #e0d7c3;
+  height: 220px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: brown;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.door span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.door span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.door:hover span {
+  padding-right: 25px;
+}
+
+.door:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.door:hover {
+  background: linear-gradient(#f5e7c8, #ffffff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.heroTitle {
+  margin: 0 0 10px;
+  color: #e9ecff;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.heroText p {
+  margin: 0 0 12px;
+  color: rgba(233, 236, 255, 0.88);
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+.heroSprite {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.35));
+}
+
+.heroImg {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .heroImg {
+    height: 220px;
+  }
+}
+
+/* =========================================================
+   CHARACTERS (Character Index) - Page-specific
+========================================================= */
+.page-inner {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-title {
+  color: #e9ecff;
+  letter-spacing: 0.05em;
+  margin: 0 0 18px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.character-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 18px;
+  border: 1px solid rgba(233, 236, 235, 0.35);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+.character-image {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(233, 236, 255, 0.35);
+  background: rgba(255, 255, 255, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.character-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.character-content h2 {
+  margin: 0 0 12px 0;
+  color: #e9ecff;
+  border-bottom: 1px solid rgba(233, 236, 255, 0.35);
+  padding-bottom: 6px;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+}
+
+.box {
+  border: 1px solid rgba(233, 236, 255, 0.25);
+  background: rgba(0, 0, 0, 0.20);
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  color: #e9ecff;
+  line-height: 1.5;
+}
+
+.box-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #e9ecff;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.quote {
+  font-style: italic;
+  opacity: 0.95;
+  margin: 0 0 8px 0;
+}
+
+.stats {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.stats li {
+  margin-bottom: 4px;
+  opacity: 0.95;
+}
+
+/* for mobile */
+@media (max-width: 760px) {
+  .character-card {
+    grid-template-columns: 1fr;
+  }
+  .character-image {
+    width: 100%;
+    max-width: 260px;
+    margin-bottom: 10px;
+  }
+}
+
+.universe {
+  margin-top: 22px;
+  padding-top: 10px;
+}
+
+.universe-title {
+  color: #e9ecff;
+  letter-spacing: 0.10em;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.universe-title::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: rgba(233, 236, 255, 0.25);
+}
+
+/* =========================================================
+   STUDY HALL (Quiz) - Page-specific
+========================================================= */
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.quiz {
+  background: linear-gradient(#f0e0c4, #A18D6D);
+  border: 1px solid #e0d7c3;
+  border-radius: 14px;
+  padding: 26px 30px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  animation: fade 0.25s ease;
+  color: #2b2418;
+}
+
+.quiz h1 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.quiz p {
+  line-height: 1.5;
+}
+
+.quiz button {
+  width: 100%;
+  margin: 6px 0;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid #e0d7c3;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.quiz button.btn-three {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #2b2418;
+}
+
+.small {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.7;
+  margin: 10px 0 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+/* quiz start variations */
+.quiz.start {
+  background: linear-gradient(#c7b58f, #9e9173);
+  color: #f5edc8;
+}
+
+.quiz.start h1 {
+  color: #f8f3e7;
+}
+
+.quiz.start .small {
+  color: #e6dcc6;
+}
+
+.book {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.book:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.45);
+}
+
+.btn-three {
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.btn-three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.btn-three:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.btn-three::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.quiz.start .book {
+  border: none;
+  border-radius: 0;
+  padding: 10px 14px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.quiz.start .book:hover {
+  background: transparent;
+  transform: none;
+  box-shadow: none;
+}
+
+.quiz.start button.book.btn-three {
+  color: #fff;
+}
+
+.quiz.start .book.easy.btn-three::before {
+  background-color: #e9ecff99;
+}
+
+.quiz.start .book.medium.btn-three::before {
+  background-color: #30376399;
+}
+
+.quiz.start .book.hard.btn-three::before {
+  background-color: #0f0f3f99;
+}
+
+.quiz .btn-three.quizbtn::before {
+  background-color: #957c625b;
+}
+
+.quiz .btn-three.quizbtn {
+  color: #2b2418;
+  position: relative;
+  z-index: 0;
+}
+
+/* Custom cursor (paths are relative from public/css/style.css to /assets) */
+.quiz:not(.start) {
+  cursor: url("../../assets/quill.png") 4 28, pointer;
+}
+
+.quiz:not(.start) button,
+.quiz:not(.start) button:hover {
+  cursor: url("../../assets/quill.png") 4 28, pointer;
+}
+
+.study-wrap {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.study-wrap .caption {
+  text-align: center;
+  margin-top: 10px;
+}
