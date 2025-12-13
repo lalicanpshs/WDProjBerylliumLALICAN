@@ -10,7 +10,7 @@
 */
 
 const writingsound = new Audio("../../assets/quill.mp3");
-writingsound.volume = 0.5;
+writingsound.volume = 1;
         const quiz= {
         easy:[
         ["Which characters have the same birthday?",
