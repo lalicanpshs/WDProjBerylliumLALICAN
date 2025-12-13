@@ -8,6 +8,9 @@
    - Displays questions and multiple choice buttons using innerHTML.
    - Tracks score and shows final score screen with a "Go back" button.
 */
+
+const writingsound = new Audio("../../assets/quill.mp3");
+writingsound.volume = 0.5;
         const quiz= {
         easy:[
         ["Which characters have the same birthday?",
@@ -94,6 +97,8 @@
           })();
 
     const pick = (c, a) => {
+      writingsound.currentTime = 0;
+      writingsound.play();
       if (c===a) s++;
       i++;
       next();
