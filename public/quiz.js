@@ -9,7 +9,7 @@
    - Tracks score and shows final score screen with a "Go back" button.
 */
 
-const writingsound = new Audio("../../assets/quill.mp3");
+const writingsound = new Audio("../assets/quill.mp3");
 writingsound.volume = 1;
         const quiz= {
         easy:[
