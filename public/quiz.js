@@ -42,11 +42,11 @@ writingsound.volume = 1;
         ["Which character views another as a grounding wire?",
         ["Asteria describing Castor", "Solstice describing Cynthia", "Lotus describing Sweaze", "Isaiah describing Shedletsky"],1],
         ["Which character’s stat profile suggests strong internal emotional capacity but difficulty expressing it outwardly?",
-        ["Isaiah", "Lotus", "Asteria", "Solstice"],0],
+        ["Isaiah", "Lotus", "Asteria", "Solstice"],2],
         ["Which relationship is implied to carry unresolved emotional tension based on both characters’ statements (or lack thereof)? ",
-        ["Asteria and Solstice", "Lotus and Sweaze", "Lotus and Isaiah", "Solstice and Cynthia"],3],
+        ["Asteria and Solstice", "Lotus and Sweaze", "Lotus and Isaiah", "Solstice and Cynthia"],2],
         ["Which character expresses regret over failing to tell someone how meaningful their support was?",
-        ["Asteria to Castor", "Isaiah to Sweaze", "Isaiah to Shedletsky", "Solstice to Elias"],3]
+        ["Asteria to Castor", "Isaiah to Sweaze", "Isaiah to Shedletsky", "Solstice to Elias"],1]
         ]
         };
 
