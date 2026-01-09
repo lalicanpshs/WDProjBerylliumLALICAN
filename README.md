@@ -104,10 +104,10 @@ _** Note that this will be included at the bottom of all pages:_
   <br>
   <img src="https://github.com/user-attachments/assets/14559950-ed54-4c36-8dfb-759c6c515e62" width="450" height="450" alt="Authors Office" />
 
-  # Forms Implementation 
+# Forms Implementation 
 
 
-  # Wireframe for New Webpages
+# Wireframe for New Webpages
   <br>
   <img width="1920" height="1080" alt="About Me Webpage" src="https://github.com/user-attachments/assets/2c3cd6fd-8402-4d4f-be62-b3a9ab7da5cd" />
   </br>
