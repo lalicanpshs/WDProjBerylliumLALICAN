@@ -106,6 +106,11 @@ _** Note that this will be included at the bottom of all pages:_
 
 # Forms Implementation 
 
+The website will incorporate an HTML form on the About Me page. This form will ask for the user to put their name and a short message they'd like to send to the website owner.
+
+The form fields are the text input for the user's name, the user's message, then the submit button that will save the data. Once the form is submitted, it will be stored locally on the user's computer (Web Storage/localStorage) so the website will remember the user's name.
+
+The collected name will be used across the website to display a personalized greeting such as "Hello, [username]!".
 
 # Wireframe for New Webpages
   <br>
