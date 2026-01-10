@@ -1,4 +1,3 @@
-<img width="1920" height="1080" alt="Quiz Page Updated Score Header" src="https://github.com/user-attachments/assets/7a714947-6021-4b9a-bceb-15780c206839" /># WDProjBerylliumLALICAN_MENOR
  **Title: Vestigial Archives:**
  * Subtitle Vestigial Archives: A guide to the OCverse and matters alike.
 
