@@ -1,4 +1,3 @@
-# WDProjBerylliumLALICAN_MENOR
  **Title: Vestigial Archives:**
  * Subtitle Vestigial Archives: A guide to the OCverse and matters alike.
 
@@ -105,6 +104,34 @@ _** Note that this will be included at the bottom of all pages:_
   <img src="https://github.com/user-attachments/assets/14559950-ed54-4c36-8dfb-759c6c515e62" width="450" height="450" alt="Authors Office" />
 
 </div>
+
+# Forms Implementation 
+
+The website will incorporate an HTML form on the About Me page. This form will ask for the user to put their name and a short message they'd like to send to the website owner.
+
+The form fields include the text input for the user's name, the user's message, and the submit button that saves the data. Once the form is submitted, the user's name will be stored locally on the user's computer (Web Storage/localStorage) so the website will remember the user's name.
+
+The collected name will be used across the website. In the Main Hall page, it will be used to greet the user. In the Study Hall page, the user's name will be displayed along with the score header.
+
+# Wireframe for New/Updated Webpages
+
+**About Me (new):**
+<br>
+<img width="1920" height="1080" alt="About Me Wireframe" src="https://github.com/user-attachments/assets/b30931e5-5636-4b6d-b254-e10330efcd6b" />
+</br>
+
+**Main Hall/Homepage (updated):**
+<br>
+<img width="1920" height="1080" alt="Updated Homepage Wireframe" src="https://github.com/user-attachments/assets/e6037e12-09d5-4c8a-94f3-bc059708777c" />
+</br>
+
+**Study Hall/Quiz Page:**
+<br>
+<img width="1920" height="1080" alt="Quiz Page Updated Score Header" src="https://github.com/user-attachments/assets/2e093932-46d0-4bd0-9049-e31bb8892566" />
+</br>
+Note: The data collected in the About Me page (the name) is only shown in the score header of the Study Hall.
+
+
 
 
 
