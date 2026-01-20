@@ -10,7 +10,8 @@
   <script src="./bgm.js" defer></script>
   <script src="./user.js" defer></script>
 </head>
-
+<script src="form.js"></script>
+  
 <body>
 <div class="nav">
   <div class="navinner">
@@ -33,6 +34,7 @@
     <!-- Hero Section - Intro text + along with an image  -->
     <header class="hero">
       <div class="heroText">
+        <p id="greeting"></p>
         <h1 class="page-title">About Me</h1>
         <p>
           Heya guys, I'm Sol. I created this site (with some help from my previous partner), failed_comedian, and the Roulette SMP. 
@@ -78,7 +80,7 @@
         Drop your name and send a short message.
       </p>
 
-      <form id="messageForm" class="form">
+      <form id="messageForm" action="https://formspree.io/f/xnjjgpvw" method="POST">
         <div class="field">
           <label for="visitorName">Name:</label>
           <input id="visitorName" name="visitorName" type="text" maxlength="30" placeholder="Your name">
