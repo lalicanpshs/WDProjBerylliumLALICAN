@@ -507,6 +507,8 @@ body {
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.45);
 }
 
+/* Button hover effect (from CodePen reference) */
+
 .btn-three {
   color: #fff;
   transition: all 0.5s;
@@ -716,7 +718,8 @@ body {
     opacity: 0.9;
   }
 
-/*BUTTON TWO*/
+/* Button hover effect (from CodePen reference) */
+
 .btn-two {
 	color: #FFF;
 	transition: all 0.5s;
