@@ -723,17 +723,18 @@ body {
 .btn-two {
 	background: transparent;
 	border: none;
-	padding: 0;
+	padding: 12px 28px;
 	cursor: pointer;
 	display: inline-block;
 	color: #FFF;
 	transition: all 0.5s;
 	position: relative;	
+	overflow: visible;
 }
 .btn-two span {
 	z-index: 2;	
 	display: block;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 100%;	
 }
@@ -780,5 +781,7 @@ body {
 }
 
 .btn-two::before, .btn-two::after {
+	transform: rotate(45deg);
+	background-color: transparent;
 	border-radius:14px;
 }
