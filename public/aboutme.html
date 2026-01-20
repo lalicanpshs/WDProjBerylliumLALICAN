@@ -6,8 +6,9 @@
 <link rel="stylesheet" href="./css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vestigial Archives - Character Index</title>
+  <title>Vestigial Archives - About Me</title>
   <script src="./bgm.js" defer></script>
+  <script src="./user.js" defer></script>
 </head>
 
 <body>
@@ -27,6 +28,7 @@
     </div>
   </div>
 </div>
+
 <div class="page">
     <!-- Hero Section - Intro text + along with an image  -->
     <header class="hero">
@@ -36,7 +38,9 @@
           Heya guys, I'm Sol. I created this site (with some help from my previous partner), failed_comedian, and the Roulette SMP. 
         </p>
 
-        <h3 class="page-title2">Random Info You Probably Wouldn't Wanna Read But I Put It Anyway</h3>
+        <div class="divider"></div>
+
+        <h2 class="page-title2">Random Info You Probably Wouldn't Wanna Read But I Put It Anyway</h2>
         <p>
         Did you know that I didn't intend to do this project myself?
         </p>
@@ -47,36 +51,54 @@
         And then I got unlucky.
         </p>
         <p>
-        I was then forced to use my own OCs, which I kinda gave up and barely worked on. A while later, I've been working on an SMP. Unfortunately for me, I had the ingenious idea to use that for my website a week before the deadline. But it's a win-win! I end up enjoying working on my website, and I can also end up advertising the SMP!
+        I was then forced to use my own OCs, which I kinda gave up and barely worked on. A while later, I've been working on an SMP. Unfortunately for me, I had the ingenious idea to use that for my website a week before the deadline. But it's a win-win! I end up enjoying working on my website, and I get to advertise the SMP!
         </p>
         <p>
         I mean, I finished it anyway. Yay.
         </p>
 
-        <h3 class="page-title2">Socials</h3>
-        <p>
+        <div class="divider"></div>
+
+        <h2 class="page-title2">Socials</h2>
+        <p class="smallText">
         We'd appreciate it if you support our socials. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.
         </p>
-        <p>
-            <a href="https://www.tiktok.com/@roulettesmp?_r=1&_t=ZS-93DRYKC4X1o" target="_blank" rel="noopener">
-            Roulette SMP's Official TikTok
-            </a>
-        </p>
-        <p>
-            <a href="https://youtube.com/@misspinkfish?si=FjwMrtX9wYgR2Zdm" target="_blank" rel="noopener">
-            MissPinkFish's YouTube
-            </a>
-        </p>
-        <p>
-            <a href="https://youtube.com/@fail3d_comedian?si=OlgOq_6xlMCXAr1p" target="_blank" rel="noopener">
-            failed_comedian's YouTube
-            </a>
-        </p>
-        <p>
-            <a href="https://youtube.com/@sweazesweaze?si=h85GYcglURbd3q7s" target="_blank" rel="noopener">
-            Sweaze's YouTube
-            </a>
-        </p>
+
+        <ul class="socials">
+        <li><a href="https://www.tiktok.com/@roulettesmp?_r=1&_t=ZS-93DRYKC4X1o" target="_blank" rel="noopener">Roulette SMP's Official TikTok</a></li>
+        <li><a href="https://youtube.com/@misspinkfish?si=FjwMrtX9wYgR2Zdm" target="_blank" rel="noopener">MissPinkFish's YouTube</a></li>
+        <li><a href="https://youtube.com/@fail3d_comedian?si=OlgOq_6xlMCXAr1p" target="_blank" rel="noopener">failed_comedian's YouTube</a></li>
+        <li><a href="https://youtube.com/@sweazesweaze?si=h85GYcglURbd3q7s" target="_blank" rel="noopener">Sweaze's YouTube</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <section class="formCard">
+      <h2 class="page-title2">Leave a Message</h2>
+      <p class="smallText">
+        Drop your name and send a short message.
+      </p>
+
+      <form id="messageForm" class="form">
+        <div class="field">
+          <label for="visitorName">Name:</label>
+          <input id="visitorName" name="visitorName" type="text" maxlength="30" 
+        </div>
+
+        <div class="field">
+          <label for="visitorMessage">Message: </label>
+          <textarea id="visitorMessage" name="visitorMessage" rows="4" maxlength="200"
+        </div>
+
+        <div class="formSubmit">
+          <button type="submit" class="btn-solid">Save</button>
+          <button type="button" id="clearSaved" class="btn-ghost">Clear saved name</button>
+        </div>
+
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+
     </div>
       <div class="heroImage">
       <img src="./assets/rsmpspawn.png" alt="Roulette SMP Spawn" class="heroSprite">

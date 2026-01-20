@@ -616,23 +616,115 @@ body {
    ABOUT ME - Page-specific
 ========================================================= */
 
-.myDiv {
-  background: linear-gradient(#f0e0c4, #A18D6D);
-  border: 1px solid #e0d7c3;
-  text-align: center;
-  padding: 40px;
-  border-radius: 25px;
-  margin: 60px auto;
-    width: 80%;
-  max-width: 1000px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  animation: fadeUp 1.2s ease-in-out;
-  }
-
   .page-title2 {
     color: #e9ecff;
     letter-spacing: 0.05em;
     margin: 0 0 18px 0;
     font-size: 17px;
     font-weight: 600;
+  }
+
+  .divider {
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+    margin: 14px 0;
+  }
+
+  .smallText {
+    font-size: 0.95rem;
+    opacity:0.85;
+    line-height: 1.5;
+  }
+
+  .socials {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 0;
+  }
+
+  .socials li {
+    margin: 8px 0;
+  }
+
+  .socials a {
+    border-bottom: 1px dashed rgba(255,255,255,0.35);
+  }
+
+  .socials a:hover {
+    border-bottom-style:solid;
+  }
+
+  .formCard {
+    margin-top: 18px;
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+  }
+
+  .form {
+    margin-top: 10px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .field label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+
+  .field input, .field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius:12px;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(0,0,0,0.35);
+    color: inherit;
+    outline: none;
+  }
+
+  .field input:focus, .field textarea:focus {
+    border-color: rgba(255,255,255,0.35);
+  }
+
+  .formSubmit {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+  .btn-solid, .btn-ghost {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.18);
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .btn-solid {
+    background: rgba(255,255,255,0.12);
+  }
+
+  .btn-solid:hover {
+    background: rgba(255,255,255,0.18);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    opacity: 0.9;
+  }
+
+  .btn-ghost:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  .status {
+    min-height: 1.2em;
+    opacity: 0.9;
   }
