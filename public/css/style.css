@@ -721,6 +721,11 @@ body {
 /* Button hover effect (from CodePen reference) */
 
 .btn-two {
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	display: inline-block;
 	color: #FFF;
 	transition: all 0.5s;
 	position: relative;	
@@ -770,5 +775,10 @@ body {
   height: 44px;
   border-radius: 14px;
   overflow: hidden;
+  position: relative;
+  background: transparent;
 }
 
+.btn-two::before, .btn-two::after {
+	border-radius:14px;
+}
