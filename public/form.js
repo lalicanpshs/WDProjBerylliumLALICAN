@@ -16,3 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+function showScoreGreeting(score) {
+  const name = localStorage.getItem("visitorName");
+  const greeting = document.getElementById("scoreGreeting");
+
+  if (name && greeting) {
+    greeting.textContent = `Good job, ${name}.`;
+  }
+}
