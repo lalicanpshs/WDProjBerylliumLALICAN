@@ -611,3 +611,28 @@ body {
   text-align: center;
   margin-top: 10px;
 }
+
+/* =========================================================
+   ABOUT ME - Page-specific
+========================================================= */
+
+.myDiv {
+  background: linear-gradient(#f0e0c4, #A18D6D);
+  border: 1px solid #e0d7c3;
+  text-align: center;
+  padding: 40px;
+  border-radius: 25px;
+  margin: 60px auto;
+    width: 80%;
+  max-width: 1000px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeUp 1.2s ease-in-out;
+  }
+
+  .page-title2 {
+    color: #e9ecff;
+    letter-spacing: 0.05em;
+    margin: 0 0 18px 0;
+    font-size: 17px;
+    font-weight: 600;
+  }

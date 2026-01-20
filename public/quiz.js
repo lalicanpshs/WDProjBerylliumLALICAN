@@ -20,7 +20,7 @@ writingsound.volume = 1;
         ["What is the color of Shade's hair?", 
         ["Maroon", "Black", "Red", "Dark pink"],0],
         ["What trait of Sunny's has the highest stat/s?", 
-        ["Curiosity and adventurous nature", "Kindness", "Curiosity", "Adventurous nature and Kindness"],0],
+        ["Curiosity and adventurous nature", "Kindness", "Curiosity", "Adventurous nature and kindness"],0],
         ["Which character seems to be the most friendly?", 
         ["Me", "Sunny", "FC", "Hypii"],2],
         ],
@@ -31,22 +31,22 @@ writingsound.volume = 1;
         ["Karugami", "Karayami", "Kurayami", "Karuyami"],2],
         ["Who does Sunny describe as 'kinda annoying'?",
         ["MissPinkFish", "Imprx", "Alex", "Two"],3],
-        ["Which character stated that someone will come looking for them when they disappear?”",
+        ["Which character states that someone will come looking for them when they disappear?”",
         ["Sunny", "FC", "Shade", "Sonya"],3],
-        ["What MBTI type does Sonya have?",
-        ["ISFJ-T", "ISFP-T", "INFP-T", "ISTP-T"],1]
+        ["Which character describes the other as a 'builder, nothing more'?",
+        ["FC describing Alex", "Shade describing Hypii", "Sunny describing Imprx", "Sonya describing Noelle"],1]
         ],
         hard: [
         ["What was Shade's quote?",
         ["“Life is a game of chess. You must play smartly in life, and never overthink, or you will overlook your checkmate.”", "“Life is like a game of chess. You must play smartly in life, and never overthink, or you will overlook your checkmate.”", "“Life is a game of chess. You must play smart in life, and never overthink, or you will overlook your checkmate.”", "“Life is a game of chess. You must play smartly in life and never overthink, or you will overlook your checkmate.”"],0], 
-        ["Which character gets reminded of someone when they see this character?",
-        ["Asteria describing Castor", "Solstice describing Cynthia", "Lotus describing Sweaze", "Isaiah describing Shedletsky"],1],
-        ["Which character’s stat profile suggests strong internal emotional capacity but difficulty expressing it outwardly?",
-        ["Isaiah", "Lotus", "Asteria", "Solstice"],2],
-        ["Which relationship is implied to carry unresolved emotional tension based on both characters’ statements (or lack thereof)? ",
-        ["Asteria and Solstice", "Lotus and Sweaze", "Lotus and Isaiah", "Solstice and Cynthia"],2],
-        ["Which character expresses regret over failing to tell someone how meaningful their support was?",
-        ["Asteria to Castor", "Isaiah to Sweaze", "Isaiah to Shedletsky", "Solstice to Elias"],1]
+        ["What MBTI type does Sonya have?",
+        ["ISFJ-T", "ISFP-T", "INFP-T", "ISTP-T"],1],
+        ["Which character’s stat profile suggests greater potential?",
+        ["Sonya", "Sunny", "FC", "Shade"],2],
+        ["Which character has combat as their lowest stat?",
+        ["Alex", "Sonya", "Sunny", "Shade"],2],
+        ["Which character thinks they'd turn the server into full bedrock with somebody?",
+        ["Sonya (with Noelle)", "FC (with Sweaze)", "Shade (with Sunny)", "Sunny (with Two)"],1]
         ]
         };
 
