@@ -766,10 +766,6 @@ body {
 }
 
 .formSubmit .btn-two {
-  min-width: 160px;
-  height: 44px;
-  border-radius: 14px;
-  overflow: hidden;
   position: relative;
   background: transparent;
 }
