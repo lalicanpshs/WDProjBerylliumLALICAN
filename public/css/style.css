@@ -711,31 +711,6 @@ body {
     align-items: center;
   }
 
-  .btn-solid, .btn-ghost {
-    padding: 10px 14px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.18);
-    cursor: pointer;
-    font-weight: 700;
-  }
-
-  .btn-solid {
-    background: rgba(255,255,255,0.12);
-  }
-
-  .btn-solid:hover {
-    background: rgba(255,255,255,0.18);
-  }
-
-  .btn-ghost {
-    background: transparent;
-    opacity: 0.9;
-  }
-
-  .btn-ghost:hover {
-    background: rgba(255,255,255,0.08);
-  }
-
   .status {
     min-height: 1.2em;
     opacity: 0.9;
