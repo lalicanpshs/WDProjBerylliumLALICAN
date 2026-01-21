@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const savedName = localStorage.getItem("visitorName");
   if (savedName && greeting) {
-    greeting.textContent = `Welcome, $(savedName)!`;
+    greeting.textContent = `Welcome, ${savedName}!`;
   }
 
   if (form) {
