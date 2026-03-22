@@ -131,8 +131,17 @@ The collected name will be used across the website. In the Main Hall page, it wi
 </br>
 Note: The data collected in the About Me page (the name) is only shown in the score header of the Study Hall.
 
+# FINAL MODIFICATION PROPOSAL
 
+**Design and Narrative**
+The goal of this update is to transition from a simple greeting system to a User Profile system. This allows the user to not only introduce themselves to the website creator but also change and clear their stored name on the site.
 
+Users will submit their name and message using the About Me page, then it stores as a JSON object in localStorage. It will then be used to greet the user in all webpages (except for the Study Hall, their name will only be shown after their score is displayed). An "Edit Name" and "Clear Name" button will also be present in the About Me page, allowing the user to change or delete their saved name at any time. 
+
+**About Me:**
+<br>
+<img width="1920" height="1080" alt="Add a subheading (1)" src="https://github.com/user-attachments/assets/f46fa742-61f0-4c63-9f20-670984f1b5f5" />
+</br>
 
 
 
