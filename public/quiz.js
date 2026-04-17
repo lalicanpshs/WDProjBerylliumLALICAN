@@ -14,25 +14,25 @@ writingsound.volume = 1;
         const quiz= {
         easy:[
         ["Which characters are both born on the 19th of the month?",
-        ["Shade and FC", "Shade and Sunny", "Sunny and FC", "Sonya and Sunny"],3],
+        ["Alex and FC", "Shade and Sunny", "Shade and FC", "Sonya and Sunny"],3],
         ["What headpiece does Sonya wear?", 
         ["Flower crown", "Royal crown", "Leaf crown", "Pink shades"],1],
         ["What is the color of Shade's hair?", 
         ["Maroon", "Black", "Red", "Dark pink"],0],
         ["What trait of Sunny's has the highest stat/s?", 
         ["Curiosity and adventurous nature", "Kindness", "Curiosity", "Adventurous nature and kindness"],0],
-        ["Which character seems to be the most friendly?", 
-        ["Me", "Sunny", "FC", "Hypii"],2],
+        ["Which character ran for co-owner to gain insight?", 
+        ["Sunny", "Alex", "FC", "MissPinkFish"],2],
         ],
         medium: [
-        ["Which character is described as someone who's nice and pleasant to be around?",
-        ["Sonya", "Alex", "MissPinkFish", "Sweaze"],1],
+        ["Which character quoted the 'Art of War' by Sun Tzu?",
+        ["FC", "Alex", "Hypii", "Sweaze"],0],
         ["What is Shade's surname?",
         ["Karugami", "Karayami", "Kurayami", "Karuyami"],2],
         ["Who does Sunny describe as 'kinda annoying'?",
         ["MissPinkFish", "Imprx", "Alex", "Two"],3],
-        ["Which character states that someone will come looking for them when they disappear?”",
-        ["Sunny", "FC", "Shade", "Sonya"],3],
+        ["Which character has their picture not taken in the Overworld?",
+        ["Sunny", "FC", "Alex", "Sonya"],2],
         ["Which character describes the other as a 'builder, nothing more'?",
         ["FC describing Alex", "Shade describing Hypii", "Sunny describing Imprx", "Sonya describing Noelle"],1]
         ],
@@ -41,12 +41,12 @@ writingsound.volume = 1;
         ["“Life is a game of chess. You must play smartly in life, and never overthink, or you will overlook your checkmate.”", "“Life is like a game of chess. You must play smartly in life, and never overthink, or you will overlook your checkmate.”", "“Life is a game of chess. You must play smart in life, and never overthink, or you will overlook your checkmate.”", "“Life is a game of chess. You must play smartly in life and never overthink, or you will overlook your checkmate.”"],0], 
         ["What MBTI type does Sonya have?",
         ["ISFJ-T", "ISFP-T", "INFP-T", "ISTP-T"],1],
-        ["Which character’s stat profile suggests greater potential?",
-        ["Sonya", "Sunny", "FC", "Shade"],2],
+        ["Which character is the only one to have 'Judging' instead of 'Prospecting' in their MBTI?",
+        ["FC", "ShNsha", "Alex", "Shade"],2],
         ["Which character has combat as their lowest stat?",
         ["Alex", "Sonya", "Sunny", "Shade"],2],
-        ["Which character thinks they'd turn the server into full bedrock with somebody?",
-        ["Sonya (with Noelle)", "FC (with Sweaze)", "Shade (with Sunny)", "Sunny (with Two)"],1]
+        ["Which character received a 10% discount in an honesty shop, and who gave it?",
+        ["Sonya (with Alex)", "FC (with MissPinkFish)", "Sonya (with Sunny)", "Hypii (with Shade)"],0]
         ]
         };
 
